@@ -1,3 +1,17 @@
+#=============================================================================
+#| Encrypting a plaintext file using the Affine Cipher
+#|
+#| Author: Anthony Marrongelli
+#| Language: Python
+#|
+#| To Compile and Execute: python main.py X.txt Y Z
+#| where X.txt is the file including text
+#| and Y and Z are the numbered pair used for encryption
+#|
+#| Note: In order for this program to work properly the input can only consist
+#|       of the 26 letters of the alphabet
+#|
+#+=============================================================================
 import sys
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'     #Our alphabet we will use for indexing
