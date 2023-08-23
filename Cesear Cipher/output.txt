@@ -1,0 +1,4 @@
+Encrypted Message: 
+ftueuemzqjmybxqarmoqeqmdoubtqdqzodkbfuaziuftmwqkarfiqxhq
+After Decryption: 
+thisisanexampleofacesearcipherencryptionwithakeyoftwelve
