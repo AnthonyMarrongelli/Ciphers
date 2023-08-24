@@ -2,7 +2,7 @@
 #| Encrypting a plaintext file using the Affine Cipher
 #|
 #| Author: Anthony Marrongelli
-#| Language: Python
+#| Language: Python (3.10.3)
 #|
 #| To Compile and Execute: python main.py X.txt Y Z
 #| where X.txt is the file including text
@@ -60,9 +60,16 @@ def decrypt(encryptedArray, key1, key2):
     decryptedArray = []
     
     for item in encryptedArray:
-        decryptedArray.append('')
+        decryptedArray.append(alphabet[(modularInverse(key1)*(alphabet.index(item) - key2)) % 26])
     
     return decryptedArray
+
+#function to find modular inverse for when we are decrypting
+def modularInverse(key1):
+    x = 1
+    while x < 26:
+        if (((key1 % 26) * (x % 26)) % 26 == 1): return x
+        x += 1
 
 
 output = open('output.txt', 'w', encoding = 'utf-8')    #Opening output file to write encryption/decryption
@@ -71,4 +78,3 @@ encryptedMessage = encrypt(inputArray, key1, key2)
 
 output.write('Encrypted Message: \n' + ''.join(encryptedMessage) + '\n')    #Displaying after encrypted
 output.write('After Decryption: \n' + ''.join(decrypt(encryptedMessage, key1, key2)) + '\n')   #Displaying after encrypted was decrypted
-    
