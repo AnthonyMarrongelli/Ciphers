@@ -25,7 +25,7 @@ inputArray = []     #Array that will hold our encrypted message
 inputText = open(input_file, 'r', encoding = 'utf-8')  #Opening of intake file
 
 
-#Reading encrypted message from a file into an array
+#Reading message to decrypt from a file into an array
 try:
     i = 0
     while(1):
