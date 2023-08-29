@@ -1,12 +1,12 @@
 #=============================================================================
-#| Encrypting a plaintext file using the Caesar Cipher
+#| Encrypting a plaintext file using the Vigenere Cipher
 #|
 #| Author: Anthony Marrongelli
 #| Language: Python (3.10.3) 
 #|
-#| To Compile and Execute: python caesar.py X.txt Y
-#| where X.txt is the file including text
-#| and Y is the number that represents the key
+#| To Compile and Execute: python vigenere.py plaintext.txt key.txt
+#| where plaintext.txt is the file including text
+#| and key.txt is the file including the key
 #|
 #| Note: In order for this program to work properly the input can only consist
 #|       of the 26 letters of the alphabet
