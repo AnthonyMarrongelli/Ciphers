@@ -9,3 +9,8 @@ Collection of cryptography ciphers
 
 ### Vigenere Cipher
  - Takes a message and encryptes it by using a key file and arithmetic and modulo
+
+### Substitution Cipher
+ - Takes a message and encryptes it by using a key file with plaintext
+ - It uses the first 26 characters as its new alphabet and switches from the english alphabet to said key alphabet
+ - For this to work properly, the key file needs to be 26 letters long and each letter is unique
